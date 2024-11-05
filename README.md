@@ -9,4 +9,6 @@ This repo deals with the design and implementation of a general-purpose 2-input 
 
 For further theoritical refereces [click here](https://github.com/tejasbg19/2ipXOR/blob/main/Documents/Final%20Submission.pdf).
 
+## Block Diagram
 
+![Block Diagram of IP](https://github.com/tejasbg19/2ipXOR/blob/main/Images/Block%20diagram.png)
