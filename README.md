@@ -1,2 +1,5 @@
 # 2ipXOR
-This repo deals with the construction of a 2-input XOR gate using CMOS Skywater 130nm technology in [`xschem`](https://xschem.sourceforge.io/stefan/index.html) & obtaining its paramenters through pre-layout simulation using `ngspice`. 
+This repo deals with the construction of a 2-input XOR gate using CMOS Skywater 130nm technology in 
+<a href="https://xschem.sourceforge.io/stefan/index.html" target="_blank">xschem</a> & obtaining its parameters through pre-layout simulation using 
+<a href="https://ngspice.sourceforge.io/" target="_blank">ngspice</a>.
+
