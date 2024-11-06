@@ -5,7 +5,15 @@ This repo deals with the construction of a 2-input XOR gate using CMOS Skywater 
 
 ## Abstract 
 
-This repo deals with the design and implementation of a general-purpose 2-input XOR gate using Skywater 130nm CMOS technology. The XOR gate operates at a supply voltage of 5V for a high logic level (logic 1) and approximately 0V for a low logic level (logic 0). XOR gates play a crucial role in digital systems, particularly in arithmetic and data processing applications where conditional logic operations are required.
+This repo deals with the design and implementation of a general-purpose 2-input XOR gate using Skywater 130nm CMOS technology. The XOR gate operates at a supply voltage of 5V for a high logic level (logic 1) and approximately 0V for a low logic level (logic 0). XOR gates play a crucial role in digital systems, particularly in arithmetic and data processing applications where conditional logic operations are required. Truth table of a 2 input XOR is given by:
+
+| A | B | Y|
+|:--:|:--:|:--:|
+|0|0|0|
+|0|1|1|
+|1|0|1|
+|1|1|0|
+
 
 For further theoritical refereces [click here](https://github.com/tejasbg19/2ipXOR/blob/main/Documents/Final%20Submission.pdf).
 
