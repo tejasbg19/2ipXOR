@@ -27,4 +27,7 @@ For further theoritical refereces [click here](https://github.com/tejasbg19/2ipX
 ## XOR Parameters 
 
 |Parameter | Description |	Min |	Type |	Max |	Unit |	Condition |
-|:--------:|
+|:--------:|:------------:|:----:|:---:|:-----:|:----:|:---------:|
+| Technology Used | Skywater 130nm | - |  -   |  -  | - | - |
+| VCC | Supply Voltage | - | 5.00 | - | V | T=-40C to 125C |
+| tpHL |
