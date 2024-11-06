@@ -21,7 +21,7 @@ For further theoritical refereces [click here](https://github.com/tejasbg19/2ipX
 ![Circuit Diagram](https://github.com/tejasbg19/2ipXOR/blob/main/Images/Circuit%20Schematic%20diagram.png)
 
 
-
+<br>
 
 
 ## XOR Parameters 
@@ -36,7 +36,7 @@ For further theoritical refereces [click here](https://github.com/tejasbg19/2ipX
 | tf | **Fall Time** : Time taken for the output signal to drop from 90% of its high level (VCC) to 10% of its high level|
 
 
-
+<br>
 
 # Schematic Performance Characteristics
 
