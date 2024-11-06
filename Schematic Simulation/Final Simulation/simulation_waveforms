@@ -1,0 +1,56 @@
+Completed: ngspice -b -r {/home/tejas/Desktop/Github/2ipXOR/Simulation/Final Simulation/simulation/2ipXOR.raw} {/home/tejas/Desktop/Github/2ipXOR/Simulation/Final Simulation/simulation/2ipXOR.spice}
+stderr:
+Warning: vb: no DC value, transient time 0 value used
+Warning: va: no DC value, transient time 0 value used
+ Reference value :  5.73500e-08
+data:
+
+No compatibility mode selected!
+
+
+Circuit: ** sch_path: /home/tejas/desktop/github/2ipxor/simulation/final simulation/2ipxor.sch
+
+binary raw file "/home/tejas/Desktop/Github/2ipXOR/Simulation/Final Simulation/simulation/2ipXOR.raw"
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+No. of Data Columns : 53  
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+net1                                  0.358423
+abar                                         5
+vcc                                          5
+y                                  3.00496e-08
+a                                            0
+net2                               1.50249e-08
+bbar                                         5
+b                                            0
+net3                               1.50248e-08
+net4                                   4.99998
+net5                                  0.329394
+net6                                   4.99998
+net7                                  0.329394
+vb#branch                                    0
+va#branch                                    0
+vcc1#branch                       -2.68709e-10
+
+
+No. of Data Rows : 1245
+
+Total analysis time (seconds) = 0.123298
+
+Total CPU time (seconds) = 11.547 
+
+Total DRAM available = 12241.086 MB.
+DRAM currently available =  485.879 MB.
+Maximum ngspice program size =  726.773 MB.
+Current ngspice program size =  663.879 MB.
+
+Shared ngspice pages =    8.555 MB.
+Text (code) pages =    6.285 MB.
+Stack = 0 bytes.
+Library pages =  655.988 MB.
+
