@@ -14,9 +14,17 @@ For further theoritical refereces [click here](https://github.com/tejasbg19/2ipX
 ![Block Diagram of IP](https://github.com/tejasbg19/2ipXOR/blob/main/Images/Block%20diagram.png)
 
 
+
+
 ## Circuit Diagram 
 
 ![Circuit Diagram](https://github.com/tejasbg19/2ipXOR/blob/main/Images/Circuit%20Schematic%20diagram.png)
 
+
+
+
+
 ## XOR Parameters 
 
+|Parameter| 	Description |	Min |	Type |	Max |	Unit |	Condition |
+|:--------:|
