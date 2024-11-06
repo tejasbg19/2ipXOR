@@ -26,5 +26,5 @@ For further theoritical refereces [click here](https://github.com/tejasbg19/2ipX
 
 ## XOR Parameters 
 
-|Parameter| 	Description |	Min |	Type |	Max |	Unit |	Condition |
+|Parameter | Description |	Min |	Type |	Max |	Unit |	Condition |
 |:--------:|
