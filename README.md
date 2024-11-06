@@ -26,14 +26,18 @@ For further theoritical refereces [click here](https://github.com/tejasbg19/2ipX
 
 ## XOR Parameters 
 
-|Parameter | Description |	Min |	Type |	Max |	Unit |	Condition |
+|Parameter | Description |	Min |	Average |	Max |	Unit |	Condition |
 |:--------:|:------------:|:----:|:---:|:-----:|:----:|:---------:|
 | Technology Used | Skywater 130nm | - |  -   |  -  | - | - |
 | VCC | Supply Voltage | - | 5.00 | - | V | T=-40C to 125C |
-| tpHL | **Propagation Delay High to Low** : Delay from input 50% rise to output 50% fall (high-to-low transition) | 
-| tpLH | **Propagation Delay Low to High** : Delay from input 50% fall to output 50% rise (low-to-high transition) | 
-| tr | **Rise time** : time taken for the output to go from 10% to 90% of its final high value |
-| tf | **Fall Time** : Time taken for the output signal to drop from 90% of its high level (VCC) to 10% of its high level|
+| tpHL | **Propagation Delay High to Low**: Delay from input 50% rise to output 50% fall (high-to-low transition) | 
+| tpLH | **Propagation Delay Low to High**: Delay from input 50% fall to output 50% rise (low-to-high transition) | 
+| tr | **Rise time**: time taken for the output to go from 10% to 90% of its final high value |
+| tf | **Fall Time**: Time taken for the output signal to drop from 90% of its high level (VCC) to 10% of its high level|
+| Vth | **Threshold Voltage**: The threshold voltage of a MOSFET is the minimum gate-to-source voltage(Vgs) required to create a conducting path between the source and drain terminals |
+| Cin | **Input Capacitance**: Capacitance seen at each input of the XOR gate |
+| Voh | Output high voltage |
+| Vol | Output low voltage |
 
 
 <br>
@@ -41,3 +45,9 @@ For further theoritical refereces [click here](https://github.com/tejasbg19/2ipX
 # Schematic Performance Characteristics
 
 
+## Plot of Inputs( A,B) and Output(Y)
+
+
+![Waveform](https://github.com/tejasbg19/2ipXOR/blob/main/Images/Output%20Waveform.png)
+
+In the above wave form input `A` is shown in `Red` colour. Input `B` is shown ib `blue` colour, while the output `Y` is shown in `orange` colour.
