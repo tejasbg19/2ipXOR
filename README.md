@@ -16,4 +16,7 @@ For further theoritical refereces [click here](https://github.com/tejasbg19/2ipX
 
 ## Circuit Diagram 
 
-![Circuit Diagram](https://github.com/tejasbg19/2ipXOR/blob/main/Images/Screenshot%20from%202024-11-05%2011-15-58.png)
+![Circuit Diagram](https://github.com/tejasbg19/2ipXOR/blob/main/Images/Circuit%20Schematic%20diagram.png)
+
+## XOR Parameters 
+
