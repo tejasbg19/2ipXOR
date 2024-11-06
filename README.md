@@ -30,4 +30,14 @@ For further theoritical refereces [click here](https://github.com/tejasbg19/2ipX
 |:--------:|:------------:|:----:|:---:|:-----:|:----:|:---------:|
 | Technology Used | Skywater 130nm | - |  -   |  -  | - | - |
 | VCC | Supply Voltage | - | 5.00 | - | V | T=-40C to 125C |
-| tpHL | Propagation Delay High to Low | 
+| tpHL | **Propagation Delay High to Low** : Delay from input 50% rise to output 50% fall (high-to-low transition) | 
+| tpLH | **Propagation Delay Low to High** : Delay from input 50% fall to output 50% rise (low-to-high transition) | 
+| tr | **Rise time** : time taken for the output to go from 10% to 90% of its final high value |
+| tf | **Fall Time** : Time taken for the output signal to drop from 90% of its high level (VCC) to 10% of its high level|
+
+
+
+
+# Schematic Performance Characteristics
+
+
