@@ -1,4 +1,4 @@
-** sch_path: /home/tejas/Desktop/Github/2ipXOR/Simulation/Final Simulation/2ipXOR.sch
+** sch_path: /home/tejas/Desktop/Github/2ipXOR/Schematic Simulation/Final Simulation/2ipXOR.sch
 **.subckt 2ipXOR Y A VCC GND B
 *.opin Y
 *.ipin A

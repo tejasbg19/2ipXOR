@@ -258,7 +258,7 @@ savecurrent=false}
 C {code_shown.sym} 300 60 0 0 {name=TEJAS.B.G
  only_toplevel=false 
 value=".lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt 
-.tran 0.1n 100n
+.tran 0.1n 20n
 .save all
 .end"}
 C {gnd.sym} -280 -220 0 0 {name=l4 lab=GND}
