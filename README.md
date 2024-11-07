@@ -65,7 +65,7 @@ In the above wave form input `A` is shown in `Red` colour. Input `B` is shown ib
 ## EDA Tools Used & Their Installation  
 
 
-To construct the schematic I have used [`Xschem`](https://xschem.sourceforge.io/stefan/index.html), simulated the circuit using [`ngspice`](https://ngspice.sourceforge.io/), & waveform analysis I used [`gaw`](https://gaw.tuxfamily.org/). I referred to Mr.[`Rajdeep Mazumder`](https://www.linkedin.com/in/rajdeep-mazumder/?originalSubdomain=in)'s [This repo](https://github.com/rajdeep66/edaBundle_whyRD/blob/main/README.md) to install `Xschem`,`ngspice`,`Sky130 PDK` & `Stefan Schippers` [This repo](https://github.com/StefanSchippers/xschem-gaw) to install `Gaw` the waveform viwer. The steps i followed are: 
+To construct the schematic I have used [`Xschem`](https://xschem.sourceforge.io/stefan/index.html), simulated the circuit using [`ngspice`](https://ngspice.sourceforge.io/), & waveform analysis I used [`gaw`](https://gaw.tuxfamily.org/). I referred to Mr.[`Rajdeep Mazumder`](https://www.linkedin.com/in/rajdeep-mazumder/?originalSubdomain=in)'s [This repo](https://github.com/rajdeep66/edaBundle_whyRD/blob/main/README.md) to install `Xschem`,`ngspice`,`Sky130 PDK` & `Stefan Schippers` [This repo](https://github.com/StefanSchippers/xschem-gaw) to install `Gaw` the waveform viwer. The steps which I followed are: 
 
 
 1. Open terminal and install git
