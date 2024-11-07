@@ -120,7 +120,17 @@ $ sudo ln -s /usr/local/share/pdk/sky130A/libs.tech/magic/* /usr/local/lib/magic
 
 
 ```
-$ git clobe "https://github.com/tejasbg19/2ipXOR.git"
+$ git clone "https://github.com/tejasbg19/2ipXOR.git"
 ```
 
-2. head to the directory where the 
+2. Head to the directory where the schematic has been saved & Open the schematic in `xschem`.
+
+
+
+```
+$ cd 2ipXOR /Schematic Simulation/Final Simulation
+$ xschem 2ipXOR &
+```
+
+
+3. Generate netlist by clicking on `netlist button` at the top right corner of xschem. Followed by this generate simulation results by pressing on `simulation button`.
