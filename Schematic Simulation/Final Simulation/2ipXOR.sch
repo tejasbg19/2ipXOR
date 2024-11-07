@@ -62,6 +62,18 @@ N 200 -220 380 -220 {lab=VCC}
 N 380 -220 380 -210 {lab=VCC}
 N 0 -110 200 -110 {lab=#net1}
 N 50 240 50 270 {lab=GND}
+N -210 -180 -180 -180 {lab=VCC}
+N -210 -210 -180 -210 {lab=VCC}
+N -180 -210 -180 -180 {lab=VCC}
+N -210 -100 -180 -100 {lab=Abar}
+N -210 -130 -180 -130 {lab=Abar}
+N -180 -130 -180 -100 {lab=Abar}
+N 340 -170 380 -170 {lab=VCC}
+N 340 -200 380 -200 {lab=VCC}
+N 340 -200 340 -170 {lab=VCC}
+N 350 -90 380 -90 {lab=GND}
+N 350 -60 380 -60 {lab=GND}
+N 350 -90 350 -60 {lab=GND}
 C {opin.sym} 350 0 0 0 {name=p1 lab=Y}
 C {ipin.sym} -290 -140 0 0 {name=p2 lab=A}
 C {iopin.sym} 100 -250 0 0 {name=p3 lab=VCC}
