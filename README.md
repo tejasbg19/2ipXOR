@@ -142,7 +142,7 @@ $ sudo make install
 
 9. With this our tool installation is complete.
 
-
+<br>
 
 ## To Obtain The Output Waveform
 
