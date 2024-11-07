@@ -56,7 +56,7 @@ For further theoritical refereces [click here](https://github.com/tejasbg19/2ipX
 ## Plot of Inputs( A,B) and Output(Y)
 
 
-![Waveform](https://github.com/tejasbg19/2ipXOR/blob/main/Images/Output%20Waveform.png)
+![Waveform](https://github.com/tejasbg19/2ipXOR/blob/main/Images/ngspice%20Output%20Waveform.png)
 
 In the above wave form input `A` is shown in `Red` colour. Input `B` is shown ib `blue` colour, while the output `Y` is shown in `orange` colour.
 
@@ -167,3 +167,33 @@ $ xschem 2ipXOR &
 4.  Followed by this simulate the circuit by pressing on `simulate` button.This will open a new window which will show the simulation parameters or errors if any are found. If no error is found closing this window will turn `simulate` button `green`.
 5.  Now press `waves` button and select `external viewer`. This will open `Gaw` wave viewer, now select our input {V(a), V(b)} and output voltage {V(y)}. This will diplay the below output.
    
+
+
+
+
+
+## Contributers 
+- Tejas B G
+- Kunal Gosh
+- Dr. Mandar Jatkar
+- Dept. of ECE NIT, Jamshedpur
+-  VSD
+
+
+## Acknowledgments
+- Dept. of ECE NIT, Jamshedpur.
+- Kunal Gosh, Director, VSD Corp. Pvt. Ltd.
+- Dr. Mandar Jatkar, Assistant Professor, Dept. of ECE, DSATM, Bengaluru
+- Rajdeep Mazumder, Physical Design Engineer, Intel Corporation.
+- Stefan Schippers
+
+
+## Contact Information
+- Tejas B G, undergraduate student, Dept. of ECE, DSATM, Bengaluru : tejasbg13rv@gamil.com
+- Dr. Mandar Jatkar, Assistant Professor, Dept. of ECE, DSATM, Bengaluruv: jatkarmandar@gmail.com
+
+## References 
+
+#### Youtube Vidoes
+- "VLSI Project help | Open source | sky130 PDK | Xschem | NgSpice" by `whyRD` : https://youtu.be/VCuyO7Chvc8
+- "NAND Schematic | Xschem | Ngspice | SKY130" by `CAD.e` : https://youtu.be/HRLbvOWSU4M
