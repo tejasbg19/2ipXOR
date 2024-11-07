@@ -65,7 +65,8 @@ In the above wave form input `A` is shown in `Red` colour. Input `B` is shown ib
 ## EDA Tools Used & Their Installation  
 
 
-To construct the schematic I have used `Xschem` & Simulated the circuit using `ngspice`. I Followed the steps given in Mr.[`Rajdeep Mazumder`](https://www.linkedin.com/in/rajdeep-mazumder/?originalSubdomain=in)'s [This repo](https://github.com/rajdeep66/edaBundle_whyRD/blob/main/README.md) :
+To construct the schematic I have used [`Xschem`](https://xschem.sourceforge.io/stefan/index.html), simulated the circuit using [`ngspice`](https://ngspice.sourceforge.io/), & waveform analysis I used [`gaw`](https://gaw.tuxfamily.org/). I referred to Mr.[`Rajdeep Mazumder`](https://www.linkedin.com/in/rajdeep-mazumder/?originalSubdomain=in)'s [This repo](https://github.com/rajdeep66/edaBundle_whyRD/blob/main/README.md) to install `Xschem`,`ngspice`,`Sky130 PDK` & `Stefan Schippers` [This repo](https://github.com/StefanSchippers/xschem-gaw) to install `Gaw` the waveform viwer. The steps i followed are: 
+
 
 1. Open terminal and install git
 2. Make a new directory in Desktop with the name of your choice.
@@ -109,8 +110,37 @@ $ sudo make install
 $ cd ..
 $ sudo ln -s /usr/local/share/pdk/sky130A/libs.tech/magic/* /usr/local/lib/magic/sys
 ```
+8. Now to install `Gaw` use below commands inside `whyRD_eda_bundle` directory.
 
-8. With this our tool installation is complete.
+
+Prerequisites
+
+```
+$ sudo apt update
+$ sudo apt install libgtk-3-dev
+$ sudo apt install gettext
+# Suppose if the configuration fails, clean up the junk using $ make distclean
+# To reconfigure files before doing `./configure` use $ autoreconf -fi
+
+ 
+
+```
+
+Actual tool installation.
+```
+$ git clone "https://github.com/StefanSchippers/xschem-gaw.git"
+$ cd xschem-gaw /
+$ aclocal
+$ autoconf
+$ autoheader
+$ automake --add-missing
+$ ./configure
+$ make
+$ sudo make install
+```
+
+
+9. With this our tool installation is complete.
 
 
 
