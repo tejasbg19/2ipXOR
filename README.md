@@ -62,7 +62,7 @@ In the above wave form input `A` is shown in `Red` colour. Input `B` is shown ib
 
 
 
-## EDA Tools used & how to reporduce the waveform 
+## EDA Tools Used & Their Installation  
 
 
 To construct the schematic I have used `Xschem` & Simulated the circuit using `ngspice`. I Followed the steps given in Mr.[`Rajdeep Mazumder`](https://www.linkedin.com/in/rajdeep-mazumder/?originalSubdomain=in)'s [This repo](https://github.com/rajdeep66/edaBundle_whyRD/blob/main/README.md) :
@@ -112,3 +112,13 @@ $ sudo ln -s /usr/local/share/pdk/sky130A/libs.tech/magic/* /usr/local/lib/magic
 
 8. With this our tool installation is complete.
 
+
+
+## To Obtain The Output Waveform
+
+1. Clone my repo using
+
+
+```
+$ git clobe ""
+```
