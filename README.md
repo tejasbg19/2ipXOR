@@ -59,3 +59,78 @@ For further theoritical refereces [click here](https://github.com/tejasbg19/2ipX
 ![Waveform](https://github.com/tejasbg19/2ipXOR/blob/main/Images/Output%20Waveform.png)
 
 In the above wave form input `A` is shown in `Red` colour. Input `B` is shown ib `blue` colour, while the output `Y` is shown in `orange` colour.
+
+
+
+## EDA Tools Used & Their Installation  
+
+
+To construct the schematic I have used `Xschem` & Simulated the circuit using `ngspice`. I Followed the steps given in Mr.[`Rajdeep Mazumder`](https://www.linkedin.com/in/rajdeep-mazumder/?originalSubdomain=in)'s [This repo](https://github.com/rajdeep66/edaBundle_whyRD/blob/main/README.md) :
+
+1. Open terminal and install git
+2. Make a new directory in Desktop with the name of your choice.
+ 
+```
+$ mkdir <name of your choice>
+```
+
+
+4. Clone The above mentioned repo with below commands.
+
+
+ ```
+ $ git clone "https://github.com/rajdeep66/edaBundle_whyRD.git"
+ ```
+
+5. Now we will run a `script` file named `auto.sh` to do it, first copy the content of `whyrd_eda_bundle.sh` file from github and open a new file named `auto.sh` and paste it there and save the file.
+
+
+```
+$ cd edaBundle_whyRD /
+$ gedit auto.sh
+# paste the copied content into the thus opened file and save it.
+$ chmod +x auto.sh
+$ ./auto.sh
+```
+
+6. Now the tools installation will begin & we are periodically required to give permissions.
+7. Once this task is completed we will install pdk files and configure them with below commands,
+
+
+```
+$ sudo apt update
+$ sudo apt -y install yosys
+$ cd ~/whyRD_eda_bundle/
+$ git clone git://opencircuitdesign.com/open_pdks
+$ cd open_pdks
+$ ./configure --enable-sky130-pdk 
+$ sudo make
+$ sudo make install 
+$ cd ..
+$ sudo ln -s /usr/local/share/pdk/sky130A/libs.tech/magic/* /usr/local/lib/magic/sys
+```
+
+8. With this our tool installation is complete.
+
+
+
+## To Obtain The Output Waveform
+
+1. Clone my repo using below command
+
+
+```
+$ git clone "https://github.com/tejasbg19/2ipXOR.git"
+```
+
+2. Head to the directory where the schematic has been saved & Open the schematic in `xschem`.
+
+
+
+```
+$ cd 2ipXOR /Schematic Simulation/Final Simulation
+$ xschem 2ipXOR &
+```
+
+
+3. Generate the netlist by clicking on `netlist` button at the top right corner of xschem. Followed by this generate simulation results by pressing on `simulation` button.
