@@ -26,7 +26,7 @@ For further theoritical refereces [click here](https://github.com/tejasbg19/2ipX
 
 ## Circuit Diagram 
 
-![Circuit Diagram](https://github.com/tejasbg19/2ipXOR/blob/main/Images/Circuit%20Schematic%20diagram.png)
+![Circuit Diagram](https://github.com/tejasbg19/2ipXOR/blob/main/Images/Final%20Circuit%20schematic.png)
 
 
 <br>
