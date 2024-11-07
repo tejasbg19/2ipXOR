@@ -133,4 +133,4 @@ $ xschem 2ipXOR &
 ```
 
 
-3. Generate netlist by clicking on `netlist button` at the top right corner of xschem. Followed by this generate simulation results by pressing on `simulation button`.
+3. Generate the netlist by clicking on `netlist` button at the top right corner of xschem. Followed by this generate simulation results by pressing on `simulation` button.
