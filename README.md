@@ -116,9 +116,11 @@ $ sudo ln -s /usr/local/share/pdk/sky130A/libs.tech/magic/* /usr/local/lib/magic
 
 ## To Obtain The Output Waveform
 
-1. Clone my repo using
+1. Clone my repo using below command
 
 
 ```
-$ git clobe ""
+$ git clobe "https://github.com/tejasbg19/2ipXOR.git"
 ```
+
+2. head to the directory where the 
