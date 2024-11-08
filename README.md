@@ -17,19 +17,22 @@ This repo deals with the design and implementation of a general-purpose 2-input 
 
 For further theoritical refereces [click here](https://github.com/tejasbg19/2ipXOR/blob/main/Documents/Final%20Submission.pdf).
 
+
+<br> <br> <br> 
+
+
 ## Block Diagram
 
 ![Block Diagram of IP](https://github.com/tejasbg19/2ipXOR/blob/main/Images/Block%20diagram.png)
 
-
-
+<br> <br> 
 
 ## Circuit Diagram 
 
 ![Circuit Diagram](https://github.com/tejasbg19/2ipXOR/blob/main/Images/final%20ckt%20Schematic%20diagram.png)
 
 
-<br>
+<br> <br>
 
 
 ## XOR Parameters 
@@ -42,12 +45,12 @@ For further theoritical refereces [click here](https://github.com/tejasbg19/2ipX
 | tpLH | **Propagation Delay Low to High**: Delay from input 50% fall to output 50% rise (low-to-high transition) | 216.87 | 224.37 | 236.40 | ps | T=-40C to 125C |
 | tr | **Rise time**: time taken for the output to go from 10% (0.5V) to 90% (4.5V) of its final high value | 289.90 | 305.95 | 329.12 | ps | T=-40C to 125C |
 | tf | **Fall Time**: Time taken for the output signal to drop from 90% (4.5V) of its high level (VCC) to 10% (0.5V) of its high level| 217.40 | 235.97 | 260.87 | ps | T=-40C to 125C |
-| Vth | **Threshold Voltage**: The threshold voltage of a MOSFET is the minimum gate-to-source voltage(Vgs) required to create a conducting path between the source and drain terminals |
-| Cin | **Input Capacitance**: Capacitance seen at each input (A & B) of the XOR gate |
+| Vth | **Threshold Voltage**: The threshold voltage of a MOSFET is the minimum gate-to-source voltage(Vgs) required to create a conducting path between the source and drain terminals | 0.4 | 0.7 | - | V | T=-40C to 125C |
+| Cin | **Input Capacitance**: Capacitance seen at each input (A & B) of the XOR gate | - | - | - | - | - |
 | Voh | Output high voltage | 4.919 | 5.000 | 5.089 | V | A != B at T=-40C to 125C |
 | Vol | Output low voltage | -0.041 | 0.000 | 0.001 | V | A = B at T=-40C to 125C |
 
-
+<br> <br>
 <br>
 
 # Schematic Performance Characteristics
@@ -60,6 +63,11 @@ For further theoritical refereces [click here](https://github.com/tejasbg19/2ipX
 
 In the above wave form input `A` is shown in `Red` colour. Input `B` is shown ib `blue` colour, while the output `Y` is shown in `orange` colour.
 
+![gaw](https://github.com/tejasbg19/2ipXOR/blob/main/Images/GAW%20Output.png)
+In the above wave form input `A` is shown in `blue` colour. Input `B` is shown ib `red` colour, while the output `Y` is shown in `green` colour.
+
+<br>
+<br>
 
 
 ## EDA Tools Used & Their Installation  
@@ -143,8 +151,11 @@ Actual tool installation.
 9. With this our tool installation is complete.
 
 <br>
+<br>
+
 
 ## To Obtain The Output Waveform
+
 
 1. Clone my repo using below command
 
@@ -187,6 +198,26 @@ If we click on any instance of a signal, it's instantaneous voltage & instantane
 ![gaw viwer in action](https://github.com/tejasbg19/2ipXOR/blob/main/Images/GAW%20Output.png)
 Here `blue` wave represents `A`, `red` wave reprents `B` & `green` wave represents `Y`.
 
+7. Similarly, simulating the `nmoss_threshold.sch` file in `threshold_calculating_schematics` directory gives and plotting `vcc#brach vs vinn` in ngspicehelps us to find the **Vth : The threshold voltage** of the MOSFET.
+  ```
+   $ cd threshold_calculating_schematics /
+   $ xschem nmoss_threshold.sch & 
+  ```
+
+![MOS Threshold](https://github.com/tejasbg19/2ipXOR/blob/main/Images/nmoss_threshold_cktt.png)
+Performing dc sweep across gate & source. 
+
+![Mos_spice_window](https://github.com/tejasbg19/2ipXOR/blob/main/Images/nmoss_threshold_spice%20window.png)
+Here `vcc#branch` is the drain current.
+
+![threshold waveform](https://github.com/tejasbg19/2ipXOR/blob/main/Images/nmoss_thresholdwaveform.png)
+
+<br> <br>
+
+## Future Work
+- Finding (Cin) input capacitance of the FETs.
+- Finding the Reason behind why output Y is falling below 50% of VCC before the input B rises to 50% of VCC even tough A was keept constant at 5V.
+![anamoly](https://github.com/tejasbg19/2ipXOR/blob/main/Images/anamoly.png) 
 
 
 ## Contributers 
@@ -203,7 +234,7 @@ Here `blue` wave represents `A`, `red` wave reprents `B` & `green` wave represen
 - Dr. Mandar Jatkar, Assistant Professor, Dept. of ECE, DSATM, Bengaluru
 - Rajdeep Mazumder, Physical Design Engineer, Intel Corporation.
 - Stefan Schippers
-
+- 
 
 ## Contact Information
 - Tejas B G, undergraduate student, Dept. of ECE, DSATM, Bengaluru : tejasbg13rv@gamil.com
@@ -213,10 +244,25 @@ Here `blue` wave represents `A`, `red` wave reprents `B` & `green` wave represen
 
 
 #### Template
+
 - https://github.com/kunalg123/finalSubmissionFormat?tab=readme-ov-file
 
 
 #### Youtube Vidoes
+
 - "VLSI Project help | Open source | sky130 PDK | Xschem | NgSpice" by `whyRD` : https://youtu.be/VCuyO7Chvc8
 - "NAND Schematic | Xschem | Ngspice | SKY130" by `CAD.e` : https://youtu.be/HRLbvOWSU4M
+- "RC Circuit Simulation using Xschem | xschem simulation and ngspice tutorial" by `Electronics-ed`
+
+
+#### Papers 
+
+- Aggarwal, Nikita, and Rajesh Mehra. "Efficient XOR Gate Designing using VLSI Techniques." Department of Electronics & Communication Engineering, National Institute of Technical Teachers’ Training & Research Chandigarh, India-160019.
+- P. Singh and R. Mehra, "Design Analysis of XOR Gates Using CMOS & Pass Transistor Logic," Proc. National Institute of Technical Teachers Training and Research (NITTTR), Chandigarh, India
+
+### Websites 
+
+-  https://electronics.stackexchange.com/questions/658037/whats-wrong-with-this-cmos-implementation-of-xor. 
+- https://www.ic-components.com/blog/designing-cmos-logic-xor,xnor,and-transmission-gates.jsp#:~:text=To%20implement%20an%20XOR%20gate,is%20converted%20into%20a%20circuit.
+- https://www.allaboutelectronics.org/cmos-logic-gates-explained/#google_vignette
   
