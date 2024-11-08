@@ -40,12 +40,12 @@ For further theoritical refereces [click here](https://github.com/tejasbg19/2ipX
 | VCC | Supply Voltage | - | 5.00 | - | V | T=-40C to 125C |
 | tpHL | **Propagation Delay High to Low**: Delay from input 50% rise to output 50% fall (high-to-low transition) | 
 | tpLH | **Propagation Delay Low to High**: Delay from input 50% fall to output 50% rise (low-to-high transition) | 
-| tr | **Rise time**: time taken for the output to go from 10% to 90% of its final high value |
-| tf | **Fall Time**: Time taken for the output signal to drop from 90% of its high level (VCC) to 10% of its high level|
+| tr | **Rise time**: time taken for the output to go from 10% (0.5V) to 90% (4.5V) of its final high value | 258 | 260 | 264 | ps | T=-40C to 125C |
+| tf | **Fall Time**: Time taken for the output signal to drop from 90% (4.5V) of its high level (VCC) to 10% (0.5V) of its high level| 239 | 240 | 242 | ps | T=-40C to 125C |
 | Vth | **Threshold Voltage**: The threshold voltage of a MOSFET is the minimum gate-to-source voltage(Vgs) required to create a conducting path between the source and drain terminals |
 | Cin | **Input Capacitance**: Capacitance seen at each input of the XOR gate |
-| Voh | Output high voltage |
-| Vol | Output low voltage |
+| Voh | Output high voltage | 4.9 | 5 | 5.1 | V | A != B at T=-40C to 125C |
+| Vol | Output low voltage |  0 | 0 | 0.1 | V | A = B at T=-40C to 125C |
 
 
 <br>
