@@ -26,7 +26,7 @@ For further theoritical refereces [click here](https://github.com/tejasbg19/2ipX
 
 ## Circuit Diagram 
 
-![Circuit Diagram](https://github.com/tejasbg19/2ipXOR/blob/main/Images/Final%20Circuit%20schematic.png)
+![Circuit Diagram](https://github.com/tejasbg19/2ipXOR/blob/main/Images/final%20ckt%20Schematic%20diagram.png)
 
 
 <br>
@@ -71,74 +71,74 @@ To construct the schematic I have used [`Xschem`](https://xschem.sourceforge.io/
 1. Open terminal and install git
 2. Make a new directory in Desktop with the name of your choice.
  
-```
-$ mkdir <name of your choice>
-```
+  ```
+  $ mkdir <name of your choice>
+  ```
 
 
 4. Clone The above mentioned repo with below commands.
 
-
- ```
- $ git clone "https://github.com/rajdeep66/edaBundle_whyRD.git"
- ```
+ 
+  ```
+  $ git clone "https://github.com/rajdeep66/edaBundle_whyRD.git"
+  ```
 
 5. Now we will run a `script` file named `auto.sh` to do it, first copy the content of `whyrd_eda_bundle.sh` file from github and open a new file named `auto.sh` and paste it there and save the file.
 
-
-```
-$ cd edaBundle_whyRD /
-$ gedit auto.sh
-# paste the copied content into the thus opened file and save it.
-$ chmod +x auto.sh
-$ ./auto.sh
-```
+  
+  ```
+  $ cd edaBundle_whyRD /
+  $ gedit auto.sh
+  # paste the copied content into the thus opened file and save it.
+  $ chmod +x auto.sh
+  $ ./auto.sh
+  ```
 
 6. Now the tools installation will begin & we are periodically required to give permissions.
 7. Once this task is completed we will install pdk files and configure them with below commands,
 
-
-```
-$ sudo apt update
-$ sudo apt -y install yosys
-$ cd ~/whyRD_eda_bundle/
-$ git clone git://opencircuitdesign.com/open_pdks
-$ cd open_pdks
-$ ./configure --enable-sky130-pdk 
-$ sudo make
-$ sudo make install 
-$ cd ..
-$ sudo ln -s /usr/local/share/pdk/sky130A/libs.tech/magic/* /usr/local/lib/magic/sys
-```
+  
+  ```
+  $ sudo apt update
+  $ sudo apt -y install yosys
+  $ cd ~/whyRD_eda_bundle/
+  $ git clone git://opencircuitdesign.com/open_pdks
+  $ cd open_pdks
+  $ ./configure --enable-sky130-pdk 
+  $ sudo make
+  $ sudo make install 
+  $ cd ..
+  $ sudo ln -s /usr/local/share/pdk/sky130A/libs.tech/magic/* /usr/local/lib/magic/sys
+  ```
 8. Now to install `Gaw` use below commands inside `whyRD_eda_bundle` directory.
 
 
 Prerequisites
 
-```
-$ sudo apt update
-$ sudo apt install libgtk-3-dev
-$ sudo apt install gettext
-# Suppose if the configuration fails, clean up the junk using $ make distclean
-# To reconfigure files before doing `./configure` use $ autoreconf -fi
+  ```
+  $ sudo apt update
+  $ sudo apt install libgtk-3-dev
+  $ sudo apt install gettext
+  # Suppose if the configuration fails, clean up the junk using $ make distclean
+  # To reconfigure files before doing `./configure` use $ autoreconf -fi
+  ```
 
- 
-
-```
 
 Actual tool installation.
-```
-$ git clone "https://github.com/StefanSchippers/xschem-gaw.git"
-$ cd xschem-gaw /
-$ aclocal
-$ autoconf
-$ autoheader
-$ automake --add-missing
-$ ./configure
-$ make
-$ sudo make install
-```
 
+
+  
+  ```
+  $ git clone "https://github.com/StefanSchippers/xschem-gaw.git"
+  $ cd xschem-gaw /
+  $ aclocal
+  $ autoconf
+  $ autoheader
+  $ automake --add-missing
+  $ ./configure
+  $ make
+  $ sudo make install
+  ```
 
 9. With this our tool installation is complete.
 
@@ -149,40 +149,40 @@ $ sudo make install
 1. Clone my repo using below command
 
 
-```
-$ git clone "https://github.com/tejasbg19/2ipXOR.git"
-```
+  ```
+  $ git clone "https://github.com/tejasbg19/2ipXOR.git"
+  ```
 
 2. Head to the directory where the schematic has been saved & Open the schematic in `xschem`.
 
 
-
-```
-$ cd 2ipXOR /Schematic Simulation/Final Simulation
-$ xschem 2ipXOR &
-```
+  
+  ```
+  $ cd 2ipXOR /Schematic Simulation/Final Simulation
+  $ xschem 2ipXOR &
+  ```
 
 
 3. Generate the netlist by clicking on `netlist` button at the top right corner of xschem.If there are any errors that `netlist`button turns red and a information window will pop-up displaying the errors. If there are no errors, then the `netlist` button turns green and a netlist will be genrated and stored at the loctaion `~/.xschem/simulations`. netlist can be accessed by navigating to that directory.
 4.  Followed by this simulate the circuit by pressing on `simulate` button.This will open a new window which will show the simulation parameters or errors if any are found. If no error is found, plot the inputs and outputs in ngspice using below commands in `ngspice window` :
 
-```
-$ plot B Y
-```
-![claculatuins waveform](https://github.com/tejasbg19/2ipXOR/blob/main/Images/calculation%20waveform.png)
+  ```
+  $ plot B Y
+  ```
+ ![claculatuins waveform](https://github.com/tejasbg19/2ipXOR/blob/main/Images/calculation%20waveform.png)
 
 
 
 
-If we click on any instance of a signal, it's instantaneous voltage & instantaneous time will be printed in `spice wndow` as shown below.
+If we click on any instance of a signal, it's instantaneous voltage & instantaneous time will be printed in `spice wndow` as shown below. Using this we can calculate delays.
 
-
+![spice window](https://github.com/tejasbg19/2ipXOR/blob/main/Images/spice%20window%20for%20values.png)
 
 
 
    
-5.   closing this window will turn `simulate` button `green`.
-6.  Now press `waves` button and select `external viewer`. This will open `Gaw` wave viewer, now select our input {V(a), V(b)} and output voltage {V(y)}. This will diplay the below output.
+5. Closing this `spice window` will turn `simulate` button `green`.
+6. Now press `waves` button and select `external viewer`. This will open `Gaw` wave viewer, now select our input {V(a), V(b)} and output voltage {V(y)}. This will diplay the below output.
    
 ![gaw viwer in action](https://github.com/tejasbg19/2ipXOR/blob/main/Images/GAW%20Output.png)
 Here `blue` wave represents `A`, `red` wave reprents `B` & `gree` wave represents `Y`.
@@ -211,6 +211,12 @@ Here `blue` wave represents `A`, `red` wave reprents `B` & `gree` wave represent
 
 ## References 
 
+
+#### Template
+- https://github.com/kunalg123/finalSubmissionFormat?tab=readme-ov-file
+
+
 #### Youtube Vidoes
 - "VLSI Project help | Open source | sky130 PDK | Xschem | NgSpice" by `whyRD` : https://youtu.be/VCuyO7Chvc8
 - "NAND Schematic | Xschem | Ngspice | SKY130" by `CAD.e` : https://youtu.be/HRLbvOWSU4M
+  
