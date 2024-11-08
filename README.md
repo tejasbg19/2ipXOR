@@ -45,7 +45,7 @@ For further theoritical refereces [click here](https://github.com/tejasbg19/2ipX
 | Vth | **Threshold Voltage**: The threshold voltage of a MOSFET is the minimum gate-to-source voltage(Vgs) required to create a conducting path between the source and drain terminals |
 | Cin | **Input Capacitance**: Capacitance seen at each input of the XOR gate |
 | Voh | Output high voltage | 4.9 | 5 | 5.1 | V | A != B at T=-40C to 125C |
-| Vol | Output low voltage |  0 | 0 | 0.1 | V | A = B at T=-40C to 125C |
+| Vol | Output low voltage |  0 | 0 | 0.2 | V | A = B at T=-40C to 125C |
 
 
 <br>
