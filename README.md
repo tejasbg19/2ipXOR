@@ -214,7 +214,7 @@ Here `vcc#branch` is the drain current.
 
 <br> <br>
 
-## Future Work
+## Future Works
 - Finding (Cin) input capacitance of the FETs.
 - Finding the Reason behind why output Y is falling below 50% of VCC before the input B rises to 50% of VCC even tough A was keept constant at 5V.
 ![anamoly](https://github.com/tejasbg19/2ipXOR/blob/main/Images/anamoly.png) 
