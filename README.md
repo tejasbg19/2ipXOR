@@ -185,7 +185,7 @@ If we click on any instance of a signal, it's instantaneous voltage & instantane
 6. Now press `waves` button and select `external viewer`. This will open `Gaw` wave viewer, now select our input {V(a), V(b)} and output voltage {V(y)}. This will diplay the below output.
    
 ![gaw viwer in action](https://github.com/tejasbg19/2ipXOR/blob/main/Images/GAW%20Output.png)
-Here `blue` wave represents `A`, `red` wave reprents `B` & `gree` wave represents `Y`.
+Here `blue` wave represents `A`, `red` wave reprents `B` & `green` wave represents `Y`.
 
 
 
