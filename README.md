@@ -164,11 +164,28 @@ $ xschem 2ipXOR &
 
 
 3. Generate the netlist by clicking on `netlist` button at the top right corner of xschem.If there are any errors that `netlist`button turns red and a information window will pop-up displaying the errors. If there are no errors, then the `netlist` button turns green and a netlist will be genrated and stored at the loctaion `~/.xschem/simulations`. netlist can be accessed by navigating to that directory.
-4.  Followed by this simulate the circuit by pressing on `simulate` button.This will open a new window which will show the simulation parameters or errors if any are found. If no error is found closing this window will turn `simulate` button `green`.
-5.  Now press `waves` button and select `external viewer`. This will open `Gaw` wave viewer, now select our input {V(a), V(b)} and output voltage {V(y)}. This will diplay the below output.
+4.  Followed by this simulate the circuit by pressing on `simulate` button.This will open a new window which will show the simulation parameters or errors if any are found. If no error is found, plot the inputs and outputs in ngspice using below commands in `ngspice window` :
+
+```
+$ plot B Y
+```
+![claculatuins waveform](https://github.com/tejasbg19/2ipXOR/blob/main/Images/calculation%20waveform.png)
+
+
+
+
+If we click on any instance of a signal, it's instantaneous voltage & instantaneous time will be printed in `spice wndow` as shown below.
+
+
+
+
+
    
-
-
+5.   closing this window will turn `simulate` button `green`.
+6.  Now press `waves` button and select `external viewer`. This will open `Gaw` wave viewer, now select our input {V(a), V(b)} and output voltage {V(y)}. This will diplay the below output.
+   
+![gaw viwer in action](https://github.com/tejasbg19/2ipXOR/blob/main/Images/GAW%20Output.png)
+Here `blue` wave represents `A`, `red` wave reprents `B` & `gree` wave represents `Y`.
 
 
 
