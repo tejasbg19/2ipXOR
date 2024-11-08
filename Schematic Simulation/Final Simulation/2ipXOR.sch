@@ -262,15 +262,15 @@ C {gnd.sym} 380 -40 0 0 {name=l2 lab=GND}
 C {gnd.sym} 50 270 0 0 {name=l3 lab=GND}
 C {vsource.sym} -280 -250 0 0 {name=VCC1 value=5 savecurrent=false}
 C {vsource.sym} -410 -130 0 0 {name=Va 
-value="pulse(0 5 0n 1n 1n 5n 10n)" 
+value=5 
 savecurrent=false}
 C {vsource.sym} 470 -80 0 0 {name=Vb 
-value="pulse(0 5 0n 1n 1n 2.5n 5n)" 
+value="pulse(0 5 2n 1n 1n 5n 10n)" 
 savecurrent=false}
 C {code_shown.sym} 300 60 0 0 {name=TEJAS.B.G
  only_toplevel=false 
 value=".lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt 
-.tran 0.1n 20n
+.tran 0.1n 50n
 .save all
 .end"}
 C {gnd.sym} -280 -220 0 0 {name=l4 lab=GND}
